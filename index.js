@@ -8,7 +8,7 @@ while (confirmado && limite > 0)
     limite--;
 }
 
-limite = 0;
+limite = 3;
 contador = 1;
 console.log('### DO WHILE');
 do
@@ -17,3 +17,9 @@ do
     contador++;
 }
 while (contador <= limite);
+
+console.log('### FOR');
+for (var i = 1; i <= limite; i++)
+{
+    console.log(i);
+}
