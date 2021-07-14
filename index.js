@@ -1,3 +1,44 @@
+// EXEMPLO DE INTERFACE - TYPESCRIPT
+interface Endereco {
+    logradouro: String;
+    numero: String;
+    bairro: String;
+}
+
+interface Pessoa {
+    nome: String;
+    idade: Number;
+    assinante: Boolean;
+    enderecos: Endereco[];
+}
+
+// EXEMPLO JSON
+var pessoa: Pessoa = {
+    nome: "Mario",
+    idade: 25,
+    assinante: true,
+    enderecos: [
+        {
+            logradouro: "Rua asfaltada",
+            numero: 234,
+            bairro: "Jardim florido",
+        },
+        {
+            logradouro: "Rua asfaltada",
+            numero: 234,
+            bairro: "Jardim florido",
+        },
+        {
+            logradouro: "Rua asfaltada",
+            numero: 234,
+            bairro: "Jardim florido",
+        }
+    ]
+};
+
+var rua1 = pessoa.enderecos[0].logradouro;
+var rua2 = pessoa.enderecos[1].logradouro;
+
 var contador = 1;
 var limite = 3;
 var confirmado = false;
